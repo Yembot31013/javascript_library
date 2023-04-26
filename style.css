@@ -1,0 +1,53 @@
+/* .highlight{
+    
+} */
+
+.highlight .select-active, .highlight .select-unactive{
+    padding: 5px;
+    width: fit-content;
+    background-color: rgb(213, 219, 219);
+}
+.highlight .select-unactive{
+    border: 2px dashed grey;
+    color: #504e4e;
+    cursor: not-allowed;
+    animation: unactive 0.2s infinite;
+}
+.highlight .select-active{
+    border: 2px dashed rgb(24, 167, 24);
+    color: #03550e;
+    cursor: pointer;
+    animation: actives 0.2s infinite;
+}
+.highlight .select-active:hover{
+    transform: scale(1.03);
+}
+.highlight .select-unactive:hover{
+    transform: scale(0.9);
+}
+@keyframes unactive {
+    0%{
+        border: 2px dashed grey;
+    }
+    50%{
+        border: 2px solid grey;
+    }
+    100%{
+        border: 2px dashed grey;
+    }
+}
+@keyframes actives {
+    0%{
+        border: 2px dashed rgb(24, 167, 24);
+    }
+    50%{
+        border: 2px solid rgb(24, 167, 24);
+    }
+    100%{
+        border: 2px dashed rgb(24, 167, 24);
+    }
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}
